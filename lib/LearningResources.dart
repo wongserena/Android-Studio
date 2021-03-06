@@ -4,6 +4,8 @@ import 'nextpage.dart';
 import 'main.dart';
 import 'textsection.dart';
 import 'image_banner.dart';
+import 'Resources.dart';
+import 'PaddedTitle.dart';
 
 class Learning extends StatelessWidget {
   @override
@@ -19,9 +21,9 @@ class Learning extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
-            TextSection("What's happening in Ottawa", "something1"),
-            TextSection("title", "something2"),
-            TextSection("title", "something3"),
+            PaddedTitle("Internet/Technology"),
+            TextSection("Skills", "list of resources"),
+            TextSection("Just for Fun", "list of resources"),
           ],
         ),
       drawer: Drawer(
@@ -61,6 +63,14 @@ class Learning extends StatelessWidget {
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage())
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Resources'),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Resources())
                 );
               },
             )

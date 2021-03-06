@@ -4,6 +4,7 @@ import 'main.dart';
 import 'LearningResources.dart';
 import 'image_banner.dart';
 import 'textsection.dart';
+import 'PaddedTitle.dart';
 
 class NextPage extends StatelessWidget {
   @override
@@ -13,28 +14,15 @@ class NextPage extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Color.fromRGBO(253,109,91,0.9),
           title: const Text('Community Events'),
-          actions: <Widget> [
-            IconButton(
-                icon: const Icon(Icons.navigate_next),
-                tooltip: 'Go to the next page',
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(
-                      builder: (BuildContext context) {
-                        return PageThree();
-                      }
-                  ));
-                }
-            )
-          ],
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
-            TextSection("What's happening in Ottawa", "something1"),
-            TextSection("title", "something2"),
-            TextSection("title", "something3"),
+            TextSection("Indoor Events", "not currently available"),
+            TextSection("Online Events", "list of events"),
+            TextSection("Outdoor Events", "list of events"),
           ],
         ),
         drawer: Drawer(

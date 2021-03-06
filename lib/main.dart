@@ -5,6 +5,7 @@ import 'textsection.dart';
 import 'image_banner.dart';
 import 'Home Screen.dart';
 import 'LearningResources.dart';
+import 'Resources.dart';
 
 //import 'package:english_words/english_words.dart';
 // this is a new comment
@@ -124,6 +125,18 @@ class MyStatelessWidget extends StatelessWidget {
                 );
               },
             ),
+            ListTile(
+              title: Text(
+                  'Resources',
+                  style: TextStyle(
+                    fontFamily: 'Metropolis',
+              )),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Resources())
+                );
+              },
+            )
           ],
         ),
       ),

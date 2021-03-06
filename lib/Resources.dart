@@ -1,39 +1,33 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'Page Three.dart';
 import 'nextpage.dart';
 import 'main.dart';
-import 'LearningResources.dart';
 import 'textsection.dart';
 import 'image_banner.dart';
+import 'LearningResources.dart';
 import 'PaddedTitle.dart';
 
-//Matthew's Changes
-class PageThree extends StatelessWidget {
+class Resources extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Color.fromRGBO(255,255,255,1),
         appBar: AppBar(
           backgroundColor: Color.fromRGBO(253,109,91,0.9),
-          title: const Text('Activities'),
+          title: const Text('Resources'),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
-            TextSection("Activity Catalogue", "something1"),
-            TextSection("Random Activity Generator", "something2"),
-            new InkWell(
-                child: new Text('This is a link to hex converter',
-                ),
-                onTap: () => launch('https://www.rgbtohex.net/hextorgb/')
-            )
+            TextSection("Helplines", "something1"),
+            TextSection("Other websites", "something2"),
           ],
         ),
       drawer: Drawer(
         child:ListView(
-          padding: EdgeInsets.zero,
+        padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
               child: Text('Side Menu',
@@ -56,6 +50,14 @@ class PageThree extends StatelessWidget {
               },
             ),
             ListTile(
+              title: Text('Activities'),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => PageThree())
+                );
+              },
+            ),
+            ListTile(
               title: Text('Community Events'),
               onTap: (){
                 Navigator.pop(context);
@@ -74,6 +76,6 @@ class PageThree extends StatelessWidget {
           ],
         ),
       ),
-    );;
+    );
   }
 }
