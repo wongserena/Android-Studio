@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class TextSection extends StatelessWidget {
@@ -14,7 +16,11 @@ class TextSection extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(16.0, 32.0, 16.0, 4.0),
           child:   Text(
               _title,
-              style: TextStyle(fontWeight: FontWeight.bold)
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                  fontFamily: 'Metropolis',
+              )
           ),
         ),
         Container(
