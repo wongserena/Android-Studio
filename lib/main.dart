@@ -52,18 +52,50 @@ class MyStatelessWidget extends StatelessWidget {
       body: GridView.count(
           primary: false,
           padding: const EdgeInsets.all(20),
-          crossAxisCount: 2,
+          crossAxisCount: 3,
           children: <Widget>[
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Hello There'),
+              color: Color.fromRGBO(255,255,255,1),
+              children: <Widget> [
+                ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
+                OutlinedButton(
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
+                  },
+                  child: new Text('Community Events'),
+                  style: OutlinedButton.styleFrom(
+                      side: BorderSide(color: Colors.black26)
+                  ),
+                ),
+              ],
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              child: OutlinedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => PageThree()));
+                },
+                child: new Text('Activities'),
+                style: OutlinedButton.styleFrom(
+                    side: BorderSide(color: Colors.black26)
+                ),
+              ),
               color: Color.fromRGBO(255,255,255,1),
             ),
             Container(
               padding: const EdgeInsets.all(8),
-              child: const Text('Hello There'),
+              child: OutlinedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
+                },
+                child: new Text('Community Events'),
+                style: OutlinedButton.styleFrom(
+                    side: BorderSide(color: Colors.black26)
+                ),
+              ),
               color: Color.fromRGBO(255,255,255,1),
-            )
+            ),
         ],
       ),
       /*body: Column(
