@@ -55,6 +55,15 @@ class MyStatelessWidget extends StatelessWidget {
           TextSection("What's happening in Ottawa", "something1"),
           TextSection("title", "something2"),
           TextSection("title", "something3"),
+          OutlinedButton(
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
+              },
+              child: new Text('Communities'),
+              style: OutlinedButton.styleFrom(
+                side: BorderSide(color: Colors.black26)
+              ),
+          )
         ],
       ),
       drawer: Drawer(
