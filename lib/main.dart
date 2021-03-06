@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'title',
+      title: 'elderon',
       home: MyStatelessWidget(),
     );
   }
@@ -27,7 +27,7 @@ class MyStatelessWidget extends StatelessWidget {
       backgroundColor: Color.fromRGBO(255,255,255,1),
       appBar: AppBar(
         title: const Text(
-            'AppBar Demo',
+            'elderon',
             style: TextStyle(
               fontFamily: 'Metropolis',
             )
