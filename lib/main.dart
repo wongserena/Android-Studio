@@ -49,7 +49,24 @@ class MyStatelessWidget extends StatelessWidget {
           )
         ]
       ),
-      body: Column(
+      body: GridView.count(
+          primary: false,
+          padding: const EdgeInsets.all(20),
+          crossAxisCount: 2,
+          children: <Widget>[
+            Container(
+              padding: const EdgeInsets.all(8),
+              child: const Text('Hello There'),
+              color: Color.fromRGBO(255,255,255,1),
+            ),
+            Container(
+              padding: const EdgeInsets.all(8),
+              child: const Text('Hello There'),
+              color: Color.fromRGBO(255,255,255,1),
+            )
+        ],
+      ),
+      /*body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -67,7 +84,7 @@ class MyStatelessWidget extends StatelessWidget {
               ),
           )
         ],
-      ),
+      ),*/
       drawer: Drawer(
         child:ListView(
           padding: EdgeInsets.zero,
