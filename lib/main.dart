@@ -26,7 +26,12 @@ class MyStatelessWidget extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromRGBO(255,255,255,1),
       appBar: AppBar(
-        title: const Text('AppBar Demo'),
+        title: const Text(
+            'AppBar Demo',
+            style: TextStyle(
+              fontFamily: 'Metropolis',
+            )
+        ),
         backgroundColor: Color.fromRGBO(1,159,137, 0.9),
         actions:<Widget> [
           IconButton(
@@ -58,7 +63,9 @@ class MyStatelessWidget extends StatelessWidget {
           children: <Widget>[
             DrawerHeader(
             child: Text('Side Menu',
-              style: TextStyle(color: Colors.white, fontSize: 25),
+              style: TextStyle(
+                  fontFamily: 'Metropolis',
+                  color: Colors.white, fontSize: 25),
               ),
               decoration: BoxDecoration(
                 color: Colors.green,
@@ -69,7 +76,12 @@ class MyStatelessWidget extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: Text('Community Events'),
+              title: Text(
+                  'Community Events',
+                style: TextStyle(
+                  fontFamily: 'Metropolis',
+                )
+              ),
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage())
@@ -77,7 +89,12 @@ class MyStatelessWidget extends StatelessWidget {
               },
             ),
             ListTile(
-              title: Text('Activities'),
+              title: Text(
+                  'Activities',
+                style: TextStyle(
+                  fontFamily: 'Metropolis',
+                )
+              ),
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(builder: (context) => PageThree())

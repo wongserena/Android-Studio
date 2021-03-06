@@ -25,7 +25,12 @@ class TextSection extends StatelessWidget {
         ),
         Container(
           padding: const EdgeInsets.fromLTRB(16.0, 10.0, 16.0, 16.0),
-          child:   Text(_body),
+          child:   Text(
+              _body,
+              style: TextStyle(
+                fontFamily: 'Metropolis',
+              )
+          ),
         ),
       ],
     );
