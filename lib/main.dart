@@ -20,18 +20,11 @@ class MyStatelessWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blueGrey[300],
       appBar: AppBar(
         title: const Text('AppBar Demo'),
+        backgroundColor: Colors.blueGrey[500],
         actions:<Widget> [
-          IconButton(
-            icon: const Icon(Icons.add_alert),
-            tooltip: 'Show Snackbar',
-            onPressed: () {
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('This is a snackbar'))
-              );
-            }
-          ),
           IconButton(
             icon: const Icon(Icons.navigate_next),
             tooltip: 'Go to the next page',
