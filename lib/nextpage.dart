@@ -8,7 +8,7 @@ class NextPage extends StatelessWidget {
     return Scaffold(
         backgroundColor: Color.fromRGBO(255,255,255,1),
         appBar: AppBar(
-          backgroundColor: Color.fromRGBO(1,159,137, 0.9),
+          backgroundColor: Color.fromRGBO(253,109,91,0.9),
           title: const Text('Community Events'),
           actions: <Widget> [
             IconButton(
