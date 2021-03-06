@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'nextpage.dart';
 import 'textsection.dart';
+import 'image_banner.dart';
+
 //import 'package:english_words/english_words.dart';
 
 // this is a new comment
@@ -43,6 +45,7 @@ class MyStatelessWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
           TextSection(Colors.red),
           TextSection(Colors.green),
           TextSection(Colors.blue),
