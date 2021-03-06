@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/Page%20Three.dart';
 import 'nextpage.dart';
 import 'textsection.dart';
 import 'image_banner.dart';
@@ -72,6 +73,14 @@ class MyStatelessWidget extends StatelessWidget {
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage())
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Activities'),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => PageThree())
                 );
               },
             )
