@@ -8,9 +8,9 @@ class PageThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromRGBO(63, 55, 106, 0.6),
+        backgroundColor: Color.fromRGBO(255,255,255,1),
         appBar: AppBar(
-          backgroundColor: Color.fromRGBO(63, 55, 106, 1),
+          backgroundColor: Color.fromRGBO(1,159,137, 0.9),
           title: const Text('Activities'),
         ),
         body: new Center(
