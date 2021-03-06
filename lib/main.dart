@@ -56,9 +56,15 @@ class MyStatelessWidget extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-            child: Text('Drawer Header'),
+            child: Text('Drawer Header',
+              style: TextStyle(color: Colors.white, fontSize: 25),
+              ),
               decoration: BoxDecoration(
-                color:Colors.blue,
+                color: Colors.green,
+                image: DecorationImage(
+                  fit: BoxFit.fill,
+                  image: AssetImage('assets/images/cover.jpg')
+                )
               ),
             ),
             ListTile(
