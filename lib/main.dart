@@ -46,9 +46,9 @@ class MyStatelessWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
-          TextSection(Colors.red),
-          TextSection(Colors.green),
-          TextSection(Colors.blue),
+          TextSection("title", "something1"),
+          TextSection("title", "something2"),
+          TextSection("title", "something3"),
         ],
       ),
       drawer: Drawer(
