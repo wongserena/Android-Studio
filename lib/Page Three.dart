@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'nextpage.dart';
+import 'main.dart';
+
 //Matthew's Changes
 class PageThree extends StatelessWidget {
   @override
@@ -8,7 +11,7 @@ class PageThree extends StatelessWidget {
         backgroundColor: Color.fromRGBO(63, 55, 106, 0.6),
         appBar: AppBar(
           backgroundColor: Color.fromRGBO(63, 55, 106, 1),
-          title: const Text('Page Three'),
+          title: const Text('Activities'),
         ),
         body: new Center(
             child: new InkWell(
@@ -16,7 +19,42 @@ class PageThree extends StatelessWidget {
               ),
               onTap: () => launch('https://www.rgbtohex.net/hextorgb/')
             )
-        )
+        ),
+      drawer: Drawer(
+        child:ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+              child: Text('Side Menu',
+                style: TextStyle(color: Colors.white, fontSize: 25),
+              ),
+              decoration: BoxDecoration(
+                  color: Colors.green,
+                  image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage('assets/images/pexels-jakub-novacek-924824.jpg')
+                  )
+              ),
+            ),
+            ListTile(
+              title: Text('Home'),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => MyStatelessWidget())
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Community Events'),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage())
+                );
+              },
+            ),
+          ],
+        ),
+      ),
     );;
   }
 }

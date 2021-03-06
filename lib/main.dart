@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'title',
+      title: 'SeniorHelpers',
       home: MyStatelessWidget(),
     );
   }
@@ -26,21 +26,8 @@ class MyStatelessWidget extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromRGBO(63, 55, 106, 0.6),
       appBar: AppBar(
-        title: const Text('AppBar Demo'),
+        title: const Text('SeniorHelpers'),
         backgroundColor: Color.fromRGBO(63, 55, 106, 1),
-        actions:<Widget> [
-          IconButton(
-            icon: const Icon(Icons.navigate_next),
-            tooltip: 'Go to the next page',
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(
-                builder: (BuildContext context) {
-                  return NextPage();
-                }
-              ));
-            }
-          )
-        ]
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
