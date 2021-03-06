@@ -56,14 +56,14 @@ class MyStatelessWidget extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-            child: Text('Drawer Header',
+            child: Text('Side Menu',
               style: TextStyle(color: Colors.white, fontSize: 25),
               ),
               decoration: BoxDecoration(
                 color: Colors.green,
                 image: DecorationImage(
                   fit: BoxFit.fill,
-                  image: AssetImage('assets/images/cover.jpg')
+                  image: AssetImage('assets/images/pexels-jakub-novacek-924824.jpg')
                 )
               ),
             ),
@@ -71,6 +71,8 @@ class MyStatelessWidget extends StatelessWidget {
               title: Text('Community Events'),
               onTap: (){
                 Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage())
+                );
               },
             )
           ],
