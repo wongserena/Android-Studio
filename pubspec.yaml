@@ -64,8 +64,8 @@ flutter:
   fonts:
     - family: Metropolis
       fonts:
-         - asset: fonts/Metropolis-Regular.ttf
-         - asset: fonts/Metropolis-ThinItalic.ttf
+         - asset: assets/fonts/Metropolis-Regular.otf
+         - asset: assets/fonts/Metropolis-ThinItalic.otf
            style: italic
   #
   # For details regarding fonts from package dependencies,
