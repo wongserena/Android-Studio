@@ -50,8 +50,27 @@ class MyStatelessWidget extends StatelessWidget {
           TextSection(Colors.green),
           TextSection(Colors.blue),
         ],
-      )
-      );
+      ),
+      drawer: Drawer(
+        child:ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            DrawerHeader(
+            child: Text('Drawer Header'),
+              decoration: BoxDecoration(
+                color:Colors.blue,
+              ),
+            ),
+            ListTile(
+              title: Text('Community Events'),
+              onTap: (){
+                Navigator.pop(context);
+              },
+            )
+          ],
+        ),
+      ),
+    );
   }
 }
 
