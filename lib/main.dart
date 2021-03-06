@@ -21,6 +21,17 @@ class MyStatelessWidget extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('AppBar Demo'),
+        actions:<Widget> [
+          IconButton(
+            icon: const Icon(Icons.add_alert),
+            tooltip: 'Show Snackbar',
+            onPressed: () {
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(content: Text('This is a snackbar'))
+              );
+            }
+          )
+        ]
       ),
       body: Center(
         child: Text('Home',
