@@ -5,7 +5,9 @@ class PageThree extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Color.fromRGBO(63, 55, 106, 0.6),
         appBar: AppBar(
+          backgroundColor: Color.fromRGBO(63, 55, 106, 1),
           title: const Text('Page Three'),
         ),
         body: new Center(
