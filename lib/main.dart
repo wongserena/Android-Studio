@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'nextpage.dart';
+import 'textsection.dart';
 //import 'package:english_words/english_words.dart';
 
 // this is a new comment
@@ -39,16 +40,13 @@ class MyStatelessWidget extends StatelessWidget {
         ]
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Container(
-            child: Text('Hello Grogu'),
-          ),
-          Container(
-            child: Image(
-              image: NetworkImage('https://upload.wikimedia.org/wikipedia/en/thumb/0/00/The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg/220px-The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg'),
-            ),
-          )
-        ]
+          TextSection(Colors.red),
+          TextSection(Colors.green),
+          TextSection(Colors.blue),
+        ],
       )
       );
   }
