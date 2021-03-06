@@ -3,9 +3,9 @@ import 'package:flutter_app/Page%20Three.dart';
 import 'nextpage.dart';
 import 'textsection.dart';
 import 'image_banner.dart';
+import 'Home Screen.dart';
 
 //import 'package:english_words/english_words.dart';
-
 // this is a new comment
 //this is me, matthew
 void main() => runApp(MyApp());
@@ -107,7 +107,6 @@ class MyStatelessWidget extends StatelessWidget {
     );
   }
 }
-
 
 /*
 class RandomWords extends StatefulWidget {
