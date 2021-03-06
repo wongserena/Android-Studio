@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'Page Three.dart';
 import 'main.dart';
+import 'LearningResources.dart';
+import 'image_banner.dart';
+import 'textsection.dart';
 
 class NextPage extends StatelessWidget {
   @override
@@ -24,11 +27,15 @@ class NextPage extends StatelessWidget {
             )
           ],
         ),
-        body: const Center(
-            child: Text(
-              'This is the next page',
-              style: TextStyle(fontSize: 24),
-            )
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
+            TextSection("What's happening in Ottawa", "something1"),
+            TextSection("title", "something2"),
+            TextSection("title", "something3"),
+          ],
         ),
         drawer: Drawer(
         child:ListView(
@@ -61,7 +68,15 @@ class NextPage extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => PageThree())
                 );
               },
-            )
+            ),
+            ListTile(
+              title: Text('Learning Resources'),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Learning())
+                );
+              },
+            ),
           ],
         ),
       ),

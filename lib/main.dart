@@ -4,6 +4,7 @@ import 'nextpage.dart';
 import 'textsection.dart';
 import 'image_banner.dart';
 import 'Home Screen.dart';
+import 'LearningResources.dart';
 
 //import 'package:english_words/english_words.dart';
 // this is a new comment
@@ -100,7 +101,20 @@ class MyStatelessWidget extends StatelessWidget {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => PageThree())
                 );
               },
-            )
+            ),
+            ListTile(
+              title: Text(
+                  'Learning Resources',
+                  style: TextStyle(
+                    fontFamily: 'Metropolis',
+                  )
+              ),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Learning())
+                );
+              },
+            ),
           ],
         ),
       ),
