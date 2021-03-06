@@ -6,6 +6,8 @@ import 'textsection.dart';
 import 'image_banner.dart';
 import 'Resources.dart';
 import 'PaddedTitle.dart';
+import 'OrderedLists.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Learning extends StatelessWidget {
   @override
@@ -22,6 +24,10 @@ class Learning extends StatelessWidget {
           children: [
             ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
             PaddedTitle("Internet/Technology"),
+            ListTile(
+              leading: Icon(Icons.code),
+              title: Links("Coding", "https://www.freecodecamp.org/"),
+            ),
             TextSection("Skills", "list of resources"),
             TextSection("Just for Fun", "list of resources"),
           ],
