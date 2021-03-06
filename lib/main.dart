@@ -38,12 +38,19 @@ class MyStatelessWidget extends StatelessWidget {
           )
         ]
       ),
-      body: Center(
-        child: Text('Home',
-            style: TextStyle(fontSize: 24),
-      ),
+      body: Column(
+        children: [
+          Container(
+            child: Text('Hello Grogu'),
+          ),
+          Container(
+            child: Image(
+              image: NetworkImage('https://upload.wikimedia.org/wikipedia/en/thumb/0/00/The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg/220px-The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg'),
+            ),
+          )
+        ]
       )
-    );
+      );
   }
 }
 
