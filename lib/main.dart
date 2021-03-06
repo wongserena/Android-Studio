@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+//import 'package:english_words/english_words.dart';
 
 // this is a new comment
 
@@ -9,12 +9,30 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Startup Name Generator',
-        home: RandomWords(),
+      title: 'title',
+      home: MyStatelessWidget(),
     );
   }
 }
 
+class MyStatelessWidget extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('AppBar Demo'),
+      ),
+      body: Center(
+        child: Text('Home',
+            style: TextStyle(fontSize: 24),
+      ),
+      )
+    );
+  }
+}
+
+
+/*
 class RandomWords extends StatefulWidget {
   @override
   _RandomWordsState createState() => _RandomWordsState();
@@ -54,3 +72,4 @@ class _RandomWordsState extends State<RandomWords> {
     );
   }
 }
+*/
