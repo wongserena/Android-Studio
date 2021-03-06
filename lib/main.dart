@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'nextpage.dart';
 //import 'package:english_words/english_words.dart';
 
 // this is a new comment
@@ -29,6 +30,17 @@ class MyStatelessWidget extends StatelessWidget {
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text('This is a snackbar'))
               );
+            }
+          ),
+          IconButton(
+            icon: const Icon(Icons.navigate_next),
+            tooltip: 'Go to the next page',
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(
+                builder: (BuildContext context) {
+                  return NextPage();
+                }
+              ));
             }
           )
         ]
