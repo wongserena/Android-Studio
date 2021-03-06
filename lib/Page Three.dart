@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:url_launcher/url_launcher.dart';
 //Matthew's Changes
 class PageThree extends StatelessWidget {
   @override
@@ -7,10 +9,11 @@ class PageThree extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Page Three'),
         ),
-        body: const Center(
-            child: Text(
-              'This is page three',
-              style: TextStyle(fontSize: 24),
+        body: new Center(
+            child: new InkWell(
+              child: new Text('This is a link to hex converter',
+              ),
+              onTap: () => launch('https://www.rgbtohex.net/hextorgb/')
             )
         )
     );;
