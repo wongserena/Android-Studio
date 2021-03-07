@@ -6,6 +6,7 @@ import 'LearningResources.dart';
 import 'textsection.dart';
 import 'image_banner.dart';
 import 'PaddedTitle.dart';
+import 'Resources.dart';
 
 //Matthew's Changes
 class PageThree extends StatelessWidget {
@@ -68,6 +69,14 @@ class PageThree extends StatelessWidget {
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Learning())
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Other Resources'),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Resources())
                 );
               },
             ),

@@ -5,6 +5,7 @@ import 'LearningResources.dart';
 import 'image_banner.dart';
 import 'textsection.dart';
 import 'PaddedTitle.dart';
+import 'Resources.dart';
 
 class NextPage extends StatelessWidget {
   @override
@@ -62,6 +63,14 @@ class NextPage extends StatelessWidget {
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Learning())
+                );
+              },
+            ),
+            ListTile(
+              title: Text('Other Resources'),
+              onTap: (){
+                Navigator.pop(context);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => Resources())
                 );
               },
             ),
