@@ -40,16 +40,18 @@ class MyStatelessWidget extends StatelessWidget {
           primary: false,
           padding: const EdgeInsets.all(20),
           crossAxisCount: 3,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
           children: <Widget>[
             Container(
-              padding: const EdgeInsets.all(8),
-              //color: Color.fromRGBO(255,255,255,1),
+              padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                   color: Colors.green,
                   image: DecorationImage(
-                      fit: BoxFit.fill,
-                      image: AssetImage('assets/images/pexels-jakub-novacek-924824.jpg')
-                  )
+                      fit: BoxFit.cover,
+                      image: AssetImage('assets/images/pexels-jakub-novacek-924824.jpg'),
+                  ),
+                borderRadius: BorderRadius.circular(10),
               ),
               child:
                 OutlinedButton(
@@ -64,6 +66,14 @@ class MyStatelessWidget extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: Colors.green,
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage('images/oldMen_playing_chess.jpg'),
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: OutlinedButton(
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => PageThree()));
@@ -73,7 +83,6 @@ class MyStatelessWidget extends StatelessWidget {
                     side: BorderSide(color: Colors.black26)
                 ),
               ),
-              color: Color.fromRGBO(255,255,255,1),
             ),
             Container(
               padding: const EdgeInsets.all(8),
