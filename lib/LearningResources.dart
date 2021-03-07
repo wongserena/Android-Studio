@@ -67,7 +67,6 @@ class Learning extends StatelessWidget {
               title: Links("edX",
                   "https://www.edx.org/"),
             ),
-            PaddedTitle("Just for Fun"),
           ],
         ),
       drawer: Drawer(
