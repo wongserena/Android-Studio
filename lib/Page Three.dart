@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'nextpage.dart';
 import 'main.dart';
 import 'LearningResources.dart';
-import 'textsection.dart';
 import 'image_banner.dart';
 import 'PaddedTitle.dart';
 import 'Resources.dart';
@@ -37,6 +35,12 @@ class PageThree extends StatelessWidget {
               "https://www.todocanada.ca/city/ottawa/event/story-"
                   "planet-constellation-adult-writing-workshop-series/"),
             ),
+            ListTile(
+              leading: Icon(Icons.edit),
+              title: Links(
+                  "Pixel Art",
+                  "https://www.pixilart.com/"),
+            ),
             PaddedTitle("Games / Brain Teasers"),
             ListTile(
               leading: Icon(Icons.emoji_objects),
@@ -49,6 +53,12 @@ class PageThree extends StatelessWidget {
               title: Links(
                   "Play Minesweeper",
                   "https://minesweeperonline.com/"),
+            ),
+            ListTile(
+              leading: Icon(Icons.emoji_objects),
+              title: Links(
+                  "Jigsaw Puzzles",
+                  "https://www.jigsawplanet.com/"),
             ),
           ],
         ),
@@ -102,6 +112,6 @@ class PageThree extends StatelessWidget {
           ],
         ),
       ),
-    );;
+    );
   }
 }

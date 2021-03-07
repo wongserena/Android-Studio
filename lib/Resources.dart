@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'Page Three.dart';
 import 'nextpage.dart';
 import 'main.dart';
-import 'textsection.dart';
 import 'image_banner.dart';
 import 'LearningResources.dart';
 import 'PaddedTitle.dart';
@@ -27,11 +26,34 @@ class Resources extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
-            PaddedTitle("Music / Arts Lessons"),
+            PaddedTitle("General Senior Resources"),
             ListTile(
-              leading: Icon(Icons.music_note),
-              title: Links("Allegro Music Schools (online lessons)",
-                  "https://www.allegromusicschools.com/online-music-lessons"),
+              leading: Icon(Icons.question_answer),
+              title: Links("Government of Ontario Senior Resources",
+                  "https://www.ontario.ca/page/guide-programs-and-services-seniors"),
+            ),
+            ListTile(
+              leading: Icon(Icons.question_answer),
+              title: Links("City of Ottawa Resources for people in need",
+                  "https://ottawa.ca/en/family-and-social-services/family-and-social-services-covid-19-info/"
+                      "resources-people-need#food-resources-isolated-seniors"),
+            ),
+            PaddedTitle("Health Resources"),
+            ListTile(
+              leading: Icon(Icons.local_hospital),
+              title: Links("Mental health support",
+                  "https://www.canada.ca/en/public-health/services/"
+                      "mental-health-services/mental-health-get-help.html"),
+            ),
+            ListTile(
+              leading: Icon(Icons.local_hospital),
+              title: Links("COVID-19 Ontario",
+                  "https://covid-19.ontario.ca/index.html"),
+            ),
+            ListTile(
+              leading: Icon(Icons.local_hospital),
+              title: Links("Ontario Government Vaccines for adults",
+                  "https://www.ontario.ca/page/vaccines-adults#section-4%5B"),
             ),
           ],
         ),

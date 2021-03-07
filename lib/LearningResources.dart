@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'Page Three.dart';
 import 'nextpage.dart';
 import 'main.dart';
-import 'textsection.dart';
 import 'image_banner.dart';
 import 'Resources.dart';
 import 'PaddedTitle.dart';
 import 'OrderedLists.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class Learning extends StatelessWidget {
   @override

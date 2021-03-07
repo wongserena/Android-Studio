@@ -3,7 +3,6 @@ import 'Page Three.dart';
 import 'main.dart';
 import 'LearningResources.dart';
 import 'image_banner.dart';
-import 'textsection.dart';
 import 'PaddedTitle.dart';
 import 'Resources.dart';
 import 'OrderedLists.dart';
