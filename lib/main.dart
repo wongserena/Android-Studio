@@ -46,7 +46,7 @@ class MyStatelessWidget extends StatelessWidget {
             Container(//first container
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                  color: Colors.green,
+                  color: Colors.white,
                   image: DecorationImage(
                       fit: BoxFit.cover,
                       image: AssetImage('assets/images/assisted_living_activities.jpg'),
@@ -76,7 +76,7 @@ class MyStatelessWidget extends StatelessWidget {
             Container(//second container
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: Colors.green,
+                color: Colors.white,
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage('assets/images/oldMen_playing_chess.jpg'),
@@ -103,7 +103,7 @@ class MyStatelessWidget extends StatelessWidget {
             Container(//third container
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: Colors.green,
+                color: Colors.white,
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage('assets/images/old_person_online.png'),
@@ -131,7 +131,7 @@ class MyStatelessWidget extends StatelessWidget {
             Container(//fourth container
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: Colors.green,
+                color: Colors.white,
                 image: DecorationImage(
                   fit: BoxFit.cover,
                   image: AssetImage('assets/images/mother_and_daughter.jpg'),
@@ -163,17 +163,17 @@ class MyStatelessWidget extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-            child: Text('Side Menu',
+            child: Text('',
               style: TextStyle(
                   fontFamily: 'Metropolis',
                   color: Colors.white, fontSize: 25
                 ),
               ),
               decoration: BoxDecoration(
-                color: Colors.green,
+                color: Color.fromRGBO(85, 221, 201, 1),
                 image: DecorationImage(
-                  fit: BoxFit.fill,
-                  image: AssetImage('assets/images/pexels-jakub-novacek-924824.jpg')
+                  //fit: BoxFit.fill,
+                  image: AssetImage('assets/images/logo1.png')
                 )
               ),
             ),
