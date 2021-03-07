@@ -17,8 +17,13 @@ class PageThree extends StatelessWidget {
         backgroundColor: Color.fromRGBO(255,255,255,1),
         appBar: AppBar(
           backgroundColor: Color.fromRGBO(253,109,91,0.9),
-          title: const Text('Activities'),
-        ),
+          title: const Text(
+              'Activities',
+            style: TextStyle(
+                fontFamily: 'Metropolis',
+            ),
+          ),
+          ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -80,7 +85,7 @@ class PageThree extends StatelessWidget {
               },
             ),
             ListTile(
-              title: Text('Learning Resources'),
+              title: Text('Learning'),
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Learning())
@@ -88,7 +93,7 @@ class PageThree extends StatelessWidget {
               },
             ),
             ListTile(
-              title: Text('Other Resources'),
+              title: Text('Resources'),
               onTap: (){
                 Navigator.pop(context);
                 Navigator.push(context, MaterialPageRoute(builder: (context) => Resources())

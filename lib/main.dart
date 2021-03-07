@@ -114,7 +114,7 @@ class MyStatelessWidget extends StatelessWidget {
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => Learning()));
                 },
-                child: new Text('Learning Resources',
+                child: new Text('Learning',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Metropolis',
@@ -204,7 +204,7 @@ class MyStatelessWidget extends StatelessWidget {
             ),
             ListTile(
               title: Text(
-                  'Learning Resources',
+                  'Learning',
                   style: TextStyle(
                     fontFamily: 'Metropolis',
                   )

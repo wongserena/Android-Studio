@@ -16,20 +16,31 @@ class Learning extends StatelessWidget {
         backgroundColor: Color.fromRGBO(255,255,255,1),
         appBar: AppBar(
           backgroundColor: Color.fromRGBO(253,109,91,0.9),
-          title: const Text('Learning Resources'),
+          title: const Text(
+              'Learning',
+              style: TextStyle(
+                  fontFamily: 'Metropolis',
+              ),
+          ),
         ),
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
-            PaddedTitle("Internet/Technology"),
+            PaddedTitle("Computers / Technology"),
             ListTile(
               leading: Icon(Icons.code),
-              title: Links("Coding", "https://www.freecodecamp.org/"),
+              title: Links("Youth Teaching Adults",
+                  "https://youthteachingadults.ca/resources/"),
             ),
-            TextSection("Skills", "list of resources"),
-            TextSection("Just for Fun", "list of resources"),
+            PaddedTitle("Continuing Education"),
+            ListTile(
+              leading: Icon(Icons.code),
+              title: Links("Independent Learning Centre",
+                  "https://www.ilc.org/"),
+            ),
+            PaddedTitle("Just for Fun"),
           ],
         ),
       drawer: Drawer(
