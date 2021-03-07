@@ -35,19 +35,6 @@ class MyStatelessWidget extends StatelessWidget {
             )
         ),
         backgroundColor: Color.fromRGBO(1,159,137, 0.9),
-        actions:<Widget> [
-          IconButton(
-            icon: const Icon(Icons.navigate_next),
-            tooltip: 'Go to the next page',
-            onPressed: () {
-              Navigator.push(context, MaterialPageRoute(
-                builder: (BuildContext context) {
-                  return NextPage();
-                }
-              ));
-            }
-          )
-        ]
       ),
       body: GridView.count(
           primary: false,
