@@ -49,7 +49,7 @@ class MyStatelessWidget extends StatelessWidget {
                   color: Colors.green,
                   image: DecorationImage(
                       fit: BoxFit.cover,
-                      image: AssetImage('images/oldMen_playing_chess.jpg'),
+                      image: AssetImage('images/assisted_living_activities.jpg'),
                   ),
                 borderRadius: BorderRadius.circular(10),
               ),
