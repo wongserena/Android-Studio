@@ -70,6 +70,22 @@ class Learning extends StatelessWidget {
                 title: Links("edX",
                     "https://www.edx.org/"),
               ),
+              PaddedTitle("Music / Arts Lessons"),
+              ListTile(
+                leading: Icon(Icons.music_note),
+                title: Links("Allegro Music Schools (online lessons)",
+                    "https://www.allegromusicschools.com/online-music-lessons"),
+              ),
+              ListTile(
+                leading: Icon(Icons.music_note),
+                title: Links("Ottawa Music School (online lessons)",
+                    "https://canadamusicacademy.ca/Ottawa_Music_School/"),
+              ),
+              ListTile(
+                leading: Icon(Icons.music_note),
+                title: Links("Ottawa School of Art",
+                    "https://artottawa.ca/register-for-a-class/"),
+              ),
            ],
           ),
         ),

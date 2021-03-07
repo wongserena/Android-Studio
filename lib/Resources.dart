@@ -6,6 +6,7 @@ import 'textsection.dart';
 import 'image_banner.dart';
 import 'LearningResources.dart';
 import 'PaddedTitle.dart';
+import 'OrderedLists.dart';
 
 class Resources extends StatelessWidget {
   @override
@@ -26,8 +27,12 @@ class Resources extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
-            TextSection("Helplines", "something1"),
-            TextSection("Other websites", "something2"),
+            PaddedTitle("Music / Arts Lessons"),
+            ListTile(
+              leading: Icon(Icons.music_note),
+              title: Links("Allegro Music Schools (online lessons)",
+                  "https://www.allegromusicschools.com/online-music-lessons"),
+            ),
           ],
         ),
       drawer: Drawer(
