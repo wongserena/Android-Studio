@@ -35,25 +35,27 @@ class MyStatelessWidget extends StatelessWidget {
             )
         ),
       ),
-      body:
-        GridView.count(
-          primary: false,
-          padding: const EdgeInsets.all(20),
-          crossAxisCount: 2,
-          crossAxisSpacing: 10,
-          mainAxisSpacing: 10,
-          children: <Widget>[
-            Container(//first container
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
+      body: Column(
+        children: [
+          ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
+          Expanded(child: GridView.count(
+            primary: false,
+            padding: const EdgeInsets.all(20),
+            crossAxisCount: 2,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+            children: <Widget>[
+              Container(//first container
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
                   color: Colors.white,
                   image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: AssetImage('assets/images/assisted_living_activities.jpg'),
+                    fit: BoxFit.cover,
+                    image: AssetImage('assets/images/assisted_living_activities.jpg'),
                   ),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child:
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child:
                 OutlinedButton(
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
@@ -67,95 +69,98 @@ class MyStatelessWidget extends StatelessWidget {
                     ),
                   ),
                   style:
-                    OutlinedButton.styleFrom(
-                      side: BorderSide(color: Colors.black),
-                      backgroundColor: Color.fromRGBO(161,161,161, 0.6),
+                  OutlinedButton.styleFrom(
+                    side: BorderSide(color: Colors.black),
+                    backgroundColor: Color.fromRGBO(161,161,161, 0.6),
                   ),
                 ),
-            ),
-            Container(//second container
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage('assets/images/oldMen_playing_chess.jpg'),
-                ),
-                borderRadius: BorderRadius.circular(10),
               ),
-              child: OutlinedButton(
-                onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => PageThree()));
-                },
-                child: new Text('Activities',
-                  style: TextStyle(
-                    fontFamily: 'Metropolis',
-                    color: Colors.black,
-                    fontSize: 20,
+              Container(//second container
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage('assets/images/oldMen_playing_chess.jpg'),
+                  ),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: OutlinedButton(
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => PageThree()));
+                  },
+                  child: new Text('Activities',
+                    style: TextStyle(
+                      fontFamily: 'Metropolis',
+                      color: Colors.black,
+                      fontSize: 20,
+                    ),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    side: BorderSide(color: Colors.black),
+                    backgroundColor: Color.fromRGBO(161,161,161, 0.6),
                   ),
                 ),
-                style: OutlinedButton.styleFrom(
-                  side: BorderSide(color: Colors.black),
-                  backgroundColor: Color.fromRGBO(161,161,161, 0.6),
-                ),
               ),
-            ),
-            Container(//third container
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage('assets/images/old_person_online.png'),
+              Container(//third container
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage('assets/images/old_person_online.png'),
+                  ),
+                  borderRadius: BorderRadius.circular(10),
                 ),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: OutlinedButton(
-                onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Learning()));
-                },
-                child: new Text('Learning',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Metropolis',
-                    color: Colors.black,
-                    fontSize: 20,
+                child: OutlinedButton(
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Learning()));
+                  },
+                  child: new Text('Learning',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'Metropolis',
+                      color: Colors.black,
+                      fontSize: 20,
+                    ),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    side: BorderSide(color: Colors.black),
+                    backgroundColor: Color.fromRGBO(161,161,161, 0.6),
                   ),
                 ),
-                style: OutlinedButton.styleFrom(
-                  side: BorderSide(color: Colors.black),
-                  backgroundColor: Color.fromRGBO(161,161,161, 0.6),
-                ),
               ),
-            ),
-            Container(//fourth container
-              padding: const EdgeInsets.all(8),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage('assets/images/mother_and_daughter.jpg'),
+              Container(//fourth container
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  image: DecorationImage(
+                    fit: BoxFit.cover,
+                    image: AssetImage('assets/images/mother_and_daughter.jpg'),
+                  ),
+                  borderRadius: BorderRadius.circular(10),
                 ),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: OutlinedButton(
-                onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Resources()));
-                },
-                child: new Text('Resources',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Metropolis',
-                    color: Colors.black,
-                    fontSize: 20,
+                child: OutlinedButton(
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Resources()));
+                  },
+                  child: new Text('Resources',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontFamily: 'Metropolis',
+                      color: Colors.black,
+                      fontSize: 20,
+                    ),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    side: BorderSide(color: Colors.black),
+                    backgroundColor: Color.fromRGBO(161,161,161, 0.6),
                   ),
                 ),
-                style: OutlinedButton.styleFrom(
-                  side: BorderSide(color: Colors.black),
-                  backgroundColor: Color.fromRGBO(161,161,161, 0.6),
-                ),
               ),
-            ),
+            ],
+          ),
+          )
         ],
       ),
       drawer: Drawer(
