@@ -7,6 +7,7 @@ import 'textsection.dart';
 import 'image_banner.dart';
 import 'PaddedTitle.dart';
 import 'Resources.dart';
+import 'OrderedLists.dart';
 
 //Matthew's Changes
 class PageThree extends StatelessWidget {
@@ -23,13 +24,27 @@ class PageThree extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
-            TextSection("Activity Catalogue", "something1"),
-            TextSection("Random Activity Generator", "something2"),
-            new InkWell(
-                child: new Text('This is a link to hex converter',
-                ),
-                onTap: () => launch('https://www.rgbtohex.net/hextorgb/')
-            )
+            PaddedTitle("Literary / Fine Arts"),
+            ListTile(
+              leading: Icon(Icons.edit),
+              title: Links(
+                  "Story Planet: Constellation Adult Writing Workshop Series",
+              "https://www.todocanada.ca/city/ottawa/event/story-"
+                  "planet-constellation-adult-writing-workshop-series/"),
+            ),
+            PaddedTitle("Games / Brain Teasers"),
+            ListTile(
+              leading: Icon(Icons.emoji_objects),
+              title: Links(
+                  "Play Sudoku",
+                  "https://sudoku.com/"),
+            ),
+            ListTile(
+              leading: Icon(Icons.emoji_objects),
+              title: Links(
+                  "Play Minesweeper",
+                  "https://minesweeperonline.com/"),
+            ),
           ],
         ),
       drawer: Drawer(

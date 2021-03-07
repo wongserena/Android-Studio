@@ -6,6 +6,7 @@ import 'image_banner.dart';
 import 'textsection.dart';
 import 'PaddedTitle.dart';
 import 'Resources.dart';
+import 'OrderedLists.dart';
 
 class NextPage extends StatelessWidget {
   @override
@@ -21,9 +22,33 @@ class NextPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
-            TextSection("Indoor Events", "not currently available"),
-            TextSection("Online Events", "list of events"),
-            TextSection("Outdoor Events", "list of events"),
+            PaddedTitle("Entertainment"),
+            ListTile(
+              leading: Icon(Icons.theater_comedy),
+              title: Links(
+                  "The Met Opera Free Virtual Shows (virtual)",
+                  "https://www.todocanada.ca/city/ottawa/event/the-met-opera-free-virtual-shows/"),
+            ),
+            ListTile(
+              leading: Icon(Icons.theater_comedy),
+              title: Links(
+                  "Aeolian Phoenix Sessions (virtual)",
+                  "https://www.todocanada.ca/city/ottawa/event/aeolian-phoenix-sessions/"),
+            ),
+            ListTile(
+              leading: Icon(Icons.theater_comedy),
+              title: Links(
+                  "Absolute Comedy (in person)",
+                  "https://www.todocanada.ca/city/ottawa/event/"
+                      "absolute-comedy-prove-youre-comic-competition/"),
+            ),
+            ListTile(
+              leading: Icon(Icons.theater_comedy),
+              title: Links(
+                  "Restaurants Canada Show 2021 (virtual)",
+                  "https://www.todocanada.ca/city/ottawa/event/"
+                      "restaurants-canada-show-2021/"),
+            ),
           ],
         ),
         drawer: Drawer(
