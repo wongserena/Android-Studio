@@ -112,7 +112,7 @@ class MyStatelessWidget extends StatelessWidget {
               ),
               child: OutlinedButton(
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Learning()));
                 },
                 child: new Text('Learning Resources',
                   textAlign: TextAlign.center,
@@ -140,7 +140,7 @@ class MyStatelessWidget extends StatelessWidget {
               ),
               child: OutlinedButton(
                 onPressed: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Resources()));
                 },
                 child: new Text('Resources',
                   textAlign: TextAlign.center,
