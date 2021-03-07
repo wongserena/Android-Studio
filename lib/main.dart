@@ -33,12 +33,11 @@ class MyStatelessWidget extends StatelessWidget {
               fontFamily: 'Metropolis',
             )
         ),
-        backgroundColor: Color.fromRGBO(1,159,137, 0.9),
       ),
       body: GridView.count(
           primary: false,
           padding: const EdgeInsets.all(20),
-          crossAxisCount: 3,
+          crossAxisCount: 2,
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
           children: <Widget>[
@@ -58,15 +57,17 @@ class MyStatelessWidget extends StatelessWidget {
                     Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
                   },
                   child: new Text('Community Events',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
-                        fontFamily: 'Metropolis',
-                        color: Colors.black, fontSize: 35,
-                        backgroundColor: Color.fromRGBO(161,161,161,0.8),
+                      fontFamily: 'Metropolis',
+                      color: Colors.black,
+
                     ),
                   ),
                   style:
                     OutlinedButton.styleFrom(
                       side: BorderSide(color: Colors.black),
+                      backgroundColor: Color.fromRGBO(161,161,161, 0.6),
                   ),
                 ),
             ),
@@ -84,9 +85,15 @@ class MyStatelessWidget extends StatelessWidget {
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => PageThree()));
                 },
-                child: new Text('Activities'),
+                child: new Text('Activities',
+                  style: TextStyle(
+                    fontFamily: 'Metropolis',
+                    color: Colors.black,
+                  ),
+                ),
                 style: OutlinedButton.styleFrom(
-                    side: BorderSide(color: Colors.black)
+                  side: BorderSide(color: Colors.black),
+                  backgroundColor: Color.fromRGBO(161,161,161, 0.6),
                 ),
               ),
             ),
@@ -104,9 +111,16 @@ class MyStatelessWidget extends StatelessWidget {
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
                 },
-                child: new Text('Community Events'),
+                child: new Text('Learning Resources',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontFamily: 'Metropolis',
+                    color: Colors.black,
+                  ),
+                ),
                 style: OutlinedButton.styleFrom(
-                    side: BorderSide(color: Colors.black)
+                  side: BorderSide(color: Colors.black),
+                  backgroundColor: Color.fromRGBO(161,161,161, 0.6),
                 ),
               ),
             ),
@@ -132,8 +146,7 @@ class MyStatelessWidget extends StatelessWidget {
               ),
             ),
             ListTile(
-              title: Text(
-                  'Community Events',
+              title: Text('Community Events',
                 style: TextStyle(
                   fontFamily: 'Metropolis',
                 )
