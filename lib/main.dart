@@ -43,13 +43,13 @@ class MyStatelessWidget extends StatelessWidget {
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
           children: <Widget>[
-            Container(
-              padding: const EdgeInsets.all(20),
+            Container(//first container
+              padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
                   color: Colors.green,
                   image: DecorationImage(
                       fit: BoxFit.cover,
-                      image: AssetImage('assets/images/pexels-jakub-novacek-924824.jpg'),
+                      image: AssetImage('images/oldMen_playing_chess.jpg'),
                   ),
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -60,11 +60,11 @@ class MyStatelessWidget extends StatelessWidget {
                   },
                   child: new Text('Community Events'),
                   style: OutlinedButton.styleFrom(
-                      side: BorderSide(color: Colors.black26)
+                      side: BorderSide(color: Colors.black)
                   ),
                 ),
             ),
-            Container(
+            Container(//second container
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
                 color: Colors.green,
@@ -80,22 +80,29 @@ class MyStatelessWidget extends StatelessWidget {
                 },
                 child: new Text('Activities'),
                 style: OutlinedButton.styleFrom(
-                    side: BorderSide(color: Colors.black26)
+                    side: BorderSide(color: Colors.black)
                 ),
               ),
             ),
-            Container(
+            Container(//third container
               padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: Colors.green,
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage('images/oldMen_playing_chess.jpg'),
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
               child: OutlinedButton(
                 onPressed: (){
                   Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
                 },
                 child: new Text('Community Events'),
                 style: OutlinedButton.styleFrom(
-                    side: BorderSide(color: Colors.black26)
+                    side: BorderSide(color: Colors.black)
                 ),
               ),
-              color: Color.fromRGBO(255,255,255,1),
             ),
         ],
       ),
