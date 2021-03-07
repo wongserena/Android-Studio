@@ -34,11 +34,38 @@ class Learning extends StatelessWidget {
               title: Links("Youth Teaching Adults",
                   "https://youthteachingadults.ca/resources/"),
             ),
-            PaddedTitle("Continuing Education"),
             ListTile(
               leading: Icon(Icons.code),
+              title: Links("Computer Training at Nepean Seniors Centre",
+                  "https://nepeanseniorscentre.ca/technology/computer-training/"
+              ),
+            ),
+            ListTile(
+              leading: Icon(Icons.code),
+              title: Links("ConnectedCanadians",
+                  "https://www.connectedcanadians.ca/"
+              ),
+            ),
+            PaddedTitle("Continuing Education"),
+            ListTile(
+              leading: Icon(Icons.book),
               title: Links("Independent Learning Centre",
                   "https://www.ilc.org/"),
+            ),
+            ListTile(
+              leading: Icon(Icons.book),
+              title: Links("Learning in Retirement",
+                  "https://carleton.ca/linr/"),
+            ),
+            ListTile(
+              leading: Icon(Icons.book),
+              title: Links("Coursera",
+                  "https://www.coursera.org/"),
+            ),
+            ListTile(
+              leading: Icon(Icons.book),
+              title: Links("edX",
+                  "https://www.edx.org/"),
             ),
             PaddedTitle("Just for Fun"),
           ],
