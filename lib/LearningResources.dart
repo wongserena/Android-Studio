@@ -48,14 +48,13 @@ class Learning extends StatelessWidget {
         padding: EdgeInsets.zero,
           children: <Widget>[
             DrawerHeader(
-              child: Text('Side Menu',
+              child: Text('',
                 style: TextStyle(color: Colors.white, fontSize: 25),
               ),
               decoration: BoxDecoration(
-                  color: Colors.green,
+                  color: Color.fromRGBO(85, 221, 201, 1),
                   image: DecorationImage(
-                      fit: BoxFit.fill,
-                      image: AssetImage('assets/images/pexels-jakub-novacek-924824.jpg')
+                      image: AssetImage('assets/images/logo1.png')
                   )
               ),
             ),
