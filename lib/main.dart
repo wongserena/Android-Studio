@@ -57,9 +57,16 @@ class MyStatelessWidget extends StatelessWidget {
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
                   },
-                  child: new Text('Community Events'),
-                  style: OutlinedButton.styleFrom(
-                      side: BorderSide(color: Colors.black)
+                  child: new Text('Community Events',
+                    style: TextStyle(
+                        fontFamily: 'Metropolis',
+                        color: Colors.black, fontSize: 35,
+                        backgroundColor: Color.fromRGBO(161,161,161,0.8),
+                    ),
+                  ),
+                  style:
+                    OutlinedButton.styleFrom(
+                      side: BorderSide(color: Colors.black),
                   ),
                 ),
             ),
@@ -105,25 +112,6 @@ class MyStatelessWidget extends StatelessWidget {
             ),
         ],
       ),
-      /*body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
-          TextSection("What's happening in Ottawa", "something1"),
-          TextSection("title", "something2"),
-          TextSection("title", "something3"),
-          OutlinedButton(
-              onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
-              },
-              child: new Text('Communities'),
-              style: OutlinedButton.styleFrom(
-                side: BorderSide(color: Colors.black26)
-              ),
-          )
-        ],
-      ),*/
       drawer: Drawer(
         child:ListView(
           padding: EdgeInsets.zero,
@@ -132,7 +120,8 @@ class MyStatelessWidget extends StatelessWidget {
             child: Text('Side Menu',
               style: TextStyle(
                   fontFamily: 'Metropolis',
-                  color: Colors.white, fontSize: 25),
+                  color: Colors.white, fontSize: 25
+                ),
               ),
               decoration: BoxDecoration(
                 color: Colors.green,
