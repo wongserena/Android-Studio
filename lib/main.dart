@@ -27,6 +27,7 @@ class MyStatelessWidget extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromRGBO(255,255,255,1),
       appBar: AppBar(
+        backgroundColor: Color.fromRGBO(1,159,137,0.9),
         title: const Text(
             'elderon',
             style: TextStyle(
@@ -34,7 +35,8 @@ class MyStatelessWidget extends StatelessWidget {
             )
         ),
       ),
-      body: GridView.count(
+      body:
+        GridView.count(
           primary: false,
           padding: const EdgeInsets.all(20),
           crossAxisCount: 2,
@@ -113,6 +115,34 @@ class MyStatelessWidget extends StatelessWidget {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
                 },
                 child: new Text('Learning Resources',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontFamily: 'Metropolis',
+                    color: Colors.black,
+                    fontSize: 20,
+                  ),
+                ),
+                style: OutlinedButton.styleFrom(
+                  side: BorderSide(color: Colors.black),
+                  backgroundColor: Color.fromRGBO(161,161,161, 0.6),
+                ),
+              ),
+            ),
+            Container(//fourth container
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: Colors.green,
+                image: DecorationImage(
+                  fit: BoxFit.cover,
+                  image: AssetImage('assets/images/mother_and_daughter.jpg'),
+                ),
+                borderRadius: BorderRadius.circular(10),
+              ),
+              child: OutlinedButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
+                },
+                child: new Text('Resources',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: 'Metropolis',

@@ -57,6 +57,7 @@ flutter:
     - assets/images/oldMen_playing_chess.jpg
     - assets/images/assisted_living_activities.jpg
     - assets/images/old_person_online.png
+    - assets/images/mother_and_daughter.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
