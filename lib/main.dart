@@ -61,7 +61,7 @@ class MyStatelessWidget extends StatelessWidget {
                     style: TextStyle(
                       fontFamily: 'Metropolis',
                       color: Colors.black,
-
+                      fontSize: 20,
                     ),
                   ),
                   style:
@@ -89,6 +89,7 @@ class MyStatelessWidget extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'Metropolis',
                     color: Colors.black,
+                    fontSize: 20,
                   ),
                 ),
                 style: OutlinedButton.styleFrom(
@@ -116,6 +117,7 @@ class MyStatelessWidget extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'Metropolis',
                     color: Colors.black,
+                    fontSize: 20,
                   ),
                 ),
                 style: OutlinedButton.styleFrom(
