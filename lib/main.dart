@@ -49,7 +49,7 @@ class MyStatelessWidget extends StatelessWidget {
                   color: Colors.green,
                   image: DecorationImage(
                       fit: BoxFit.cover,
-                      image: AssetImage('images/oldMen_playing_chess.jpg'),
+                      image: AssetImage('assets/images/oldMen_playing_chess.jpg'),
                   ),
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -70,7 +70,7 @@ class MyStatelessWidget extends StatelessWidget {
                 color: Colors.green,
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage('images/oldMen_playing_chess.jpg'),
+                  image: AssetImage('assets/images/oldMen_playing_chess.jpg'),
                 ),
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -90,7 +90,7 @@ class MyStatelessWidget extends StatelessWidget {
                 color: Colors.green,
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage('images/oldMen_playing_chess.jpg'),
+                  image: AssetImage('assets/images/oldMen_playing_chess.jpg'),
                 ),
                 borderRadius: BorderRadius.circular(10),
               ),
