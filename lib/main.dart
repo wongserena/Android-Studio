@@ -56,9 +56,15 @@ class MyStatelessWidget extends StatelessWidget {
           children: <Widget>[
             Container(
               padding: const EdgeInsets.all(8),
-              color: Color.fromRGBO(255,255,255,1),
-              children: <Widget> [
-                ImageBanner("assets/images/pexels-jakub-novacek-924824.jpg"),
+              //color: Color.fromRGBO(255,255,255,1),
+              decoration: BoxDecoration(
+                  color: Colors.green,
+                  image: DecorationImage(
+                      fit: BoxFit.fill,
+                      image: AssetImage('assets/images/pexels-jakub-novacek-924824.jpg')
+                  )
+              ),
+              child:
                 OutlinedButton(
                   onPressed: (){
                     Navigator.push(context, MaterialPageRoute(builder: (context) => NextPage()));
@@ -68,7 +74,6 @@ class MyStatelessWidget extends StatelessWidget {
                       side: BorderSide(color: Colors.black26)
                   ),
                 ),
-              ],
             ),
             Container(
               padding: const EdgeInsets.all(8),
